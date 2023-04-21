@@ -117,15 +117,15 @@ const DetailsPost = () => {
                     </div>
                     <div className="card-text fs-30 card-lower">
                         <div className="card-lower-sub">
-                            <img alt="upvote post button" src="/src/assets/upvote_icon.png" className="icon" onClick={upvotePost}></img>
+                            <img alt="upvote post button" src="../assets/upvote_icon.png" className="icon" onClick={upvotePost}></img>
                             &nbsp;&nbsp;{thisPost.upvotes} Upvotes
                         </div>
                         <div className="card-lower-sub">
                             <Link to={"/edit/" + id}> 
-                                <img alt="edit post button" src="/src/assets/edit_icon.png" className="icon"></img>
+                                <img alt="edit post button" src="../assets/edit_icon.png" className="icon"></img>
                             </Link>
                             &nbsp;&nbsp;
-                            <img alt="delete post button" src="/src/assets/delete_icon.png" className="icon" onClick={deletePost}></img>
+                            <img alt="delete post button" src="../assets/delete_icon.png" className="icon" onClick={deletePost}></img>
                         </div>                    
                     </div>
 
@@ -136,7 +136,7 @@ const DetailsPost = () => {
                                 // <Comment postID={thisPost.id} content={comment} key={index}/>
                                 <div className="card-text comment-box" key={index}>
                                     - {comment}
-                                    <img alt="delete comment button" src="/src/assets/delete_icon.png" className="icon" onClick={() => deleteComment(comment)}></img>
+                                    <img alt="delete comment button" src="../assets/delete_icon.png" className="icon" onClick={() => deleteComment(comment)}></img>
                                 </div>
                             )                
                         : 
