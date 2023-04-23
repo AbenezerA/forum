@@ -2,7 +2,9 @@ import { React, useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { supabase } from '../client';
 import { Link } from 'react-router-dom'
-import delete_icon from '../assets/delete_icon.png'
+import delete_icon from '../assets/delete_icon.png';
+import edit_icon from '../assets/edit_icon.png';
+import upvote_icon from '../assets/upvote_icon.png';
 
 const DetailsPost = () => {
     const {id} = useParams();
@@ -118,15 +120,15 @@ const DetailsPost = () => {
                     </div>
                     <div className="card-text fs-30 card-lower">
                         <div className="card-lower-sub">
-                            <img alt="upvote post button" src="/src/assets/upvote_icon.png" className="icon" onClick={upvotePost}></img>
+                            <img alt="upvote post button" src={upvote_icon} className="icon" onClick={upvotePost}></img>
                             &nbsp;&nbsp;{thisPost.upvotes} Upvotes
                         </div>
                         <div className="card-lower-sub">
                             <Link to={"/edit/" + id}> 
-                                <img alt="edit post button" src="/src/assets/edit_icon.png" className="icon"></img>
+                                <img alt="edit post button" src={edit_icon} className="icon"></img>
                             </Link>
                             &nbsp;&nbsp;
-                            <img alt="delete post button" src="/src/assets/delete_icon.png" className="icon" onClick={deletePost}></img>
+                            <img alt="delete post button" src={delete_icon} className="icon" onClick={deletePost}></img>
                         </div>                    
                     </div>
 
