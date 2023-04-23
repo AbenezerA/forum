@@ -2,6 +2,7 @@ import { React, useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { supabase } from '../client';
 import { Link } from 'react-router-dom'
+import delete_icon from '../assets/delete_icon.png'
 
 const DetailsPost = () => {
     const {id} = useParams();
@@ -136,7 +137,7 @@ const DetailsPost = () => {
                                 // <Comment postID={thisPost.id} content={comment} key={index}/>
                                 <div className="card-text comment-box" key={index}>
                                     - {comment}
-                                    <img alt="delete comment button" src="/src/assets/delete_icon.png" className="icon" onClick={() => deleteComment(comment)}></img>
+                                    <img alt="delete comment button" src={delete_icon} className="icon" onClick={() => deleteComment(comment)}></img>
                                 </div>
                             )                
                         : 
