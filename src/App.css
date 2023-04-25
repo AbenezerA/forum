@@ -32,7 +32,7 @@
 }
 
 .order-btn {
-  margin: 0 5px;
+  margin: 5px;
 }
 
 .main-page{
@@ -42,9 +42,19 @@
 .create-form {
   background-color: #fff;
   width: 50%;
+  min-width: 300px;
   margin: 0 auto;
   padding: 15px;
   border-radius: 10px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  max-height: 50px;
 }
 
 .form-control-create {

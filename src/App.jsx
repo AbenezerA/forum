@@ -44,7 +44,7 @@ function App() {
               <button className="order-btn" type="submit" onClick={() => setOrder("upvotes")}>Popular</button>
             </div>
             <form className="search-form d-flex" role="search">
-              <input className="form-control m-2" type="search" placeholder="Search for post" aria-label="Search" onChange={(e) => searchItems(e.target.value)}></input>
+              <input className="form-control search-bar m-2" type="search" placeholder="Search for post" aria-label="Search" onChange={(e) => searchItems(e.target.value)}></input>
               {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
             </form>
           </div>
