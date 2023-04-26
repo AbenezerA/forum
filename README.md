@@ -35,7 +35,6 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [x] A "Page not found" route redirecting user back to home page whenever the user tries to access a route that doesn't exist.
 
 ## Video Walkthrough
 
