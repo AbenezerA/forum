@@ -116,7 +116,7 @@ const DetailsPost = () => {
                     <div className="card-body">                
                         <p className="fw-normal">{thisPost.content}</p> 
                         { thisPost.image_url && thisPost.image_url.length > 0 ? 
-                        <img className="img-content img-thumbnail" src={thisPost.image_url}></img> : null}                   
+                        <img className="img-content img-thumbnail" alt="User-inputted image" src={thisPost.image_url}></img> : null}                   
                     </div>
                     <div className="card-text fs-30 card-lower">
                         <div className="card-lower-sub">
