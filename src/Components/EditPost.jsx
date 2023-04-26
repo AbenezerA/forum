@@ -59,7 +59,7 @@ const EditPost = () => {
 
             setOldPost(data.filter(item => item.id == id)[0]);
 
-            window.location = "/post/" + id;
+            window.location = "/";
         }
 
     }
